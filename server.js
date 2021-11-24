@@ -18,7 +18,7 @@ const server = app.listen(port, () =>
 
 const io = require("socket.io").listen(server, {
   cors: {
-    origin: ['http://localhost:3000/chat']
+    origin: ['http://localhost:3000']
   }
 });
 
