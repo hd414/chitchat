@@ -16,7 +16,11 @@ const server = app.listen(port, () =>
   console.log(`Server running on port ${port}`)
 );
 
-const io = require("socket.io").listen(server);
+const io = require("socket.io").listen(server, {
+  cors: {
+    origin: ['http://localhost:3000/chat']
+  }
+});
 
 // Body Parser middleware to parse request bodies
 app.use(

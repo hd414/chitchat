@@ -165,6 +165,7 @@ const ChatBox = (props) => {
                         m.fromObj[0]._id === currentUserId,
                     })}
                     alignItems="flex-start"
+                    fontColor="#000000"
                   >
                     <ListItemAvatar className={classes.avatar}>
                       <Avatar>
@@ -197,7 +198,7 @@ const ChatBox = (props) => {
                 <Grid item xs={11}>
                   <TextField
                     id="message"
-                    label="Message"
+                    label="Your Messages..."
                     variant="outlined"
                     margin="dense"
                     fullWidth

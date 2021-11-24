@@ -12,6 +12,7 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import { authenticationService } from '../Services/authenticationService';
 import history from '../Utilities/history';
 import logo from './logo.png';
+import './header.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -73,6 +74,9 @@ const Header = () => {
                         className={classes.userDropdown}
                         color="inherit"
                     >
+                        <img src="https://static.thenounproject.com/png/4291178-200.png"
+                            alt="user"
+                            style={{ height: '1.5rem' }} />
                         {currentUser.name}
                         {arrowIcon()}
                     </Button>
